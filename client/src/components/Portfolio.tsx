@@ -75,13 +75,13 @@ const Portfolio: FC = () => {
   };
 
   return (
-    <section id="portfolio" className="py-32 bg-gradient-to-b from-slate-900 to-red-950/20">
+    <section id="portfolio" className="py-32 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Technical <span className="text-red-400">Projects</span>
+          <h2 className="text-4xl font-bold text-white mb-4 font-heading">
+            Technical <span className="text-red-500">Projects</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto font-medium">
             Custom tools and research projects in digital forensics, OSINT, and cybercrime investigation 
             combining technical expertise with legal knowledge.
           </p>
@@ -93,13 +93,13 @@ const Portfolio: FC = () => {
             return (
               <div
                 key={index}
-                className={`bg-slate-800/30 rounded-xl border ${colors.border} p-10 hover:border-opacity-60 transition-all duration-300 group hover:transform hover:scale-[1.02]`}
+                className={`bg-black/50 rounded-xl border ${colors.border} p-10 hover:border-opacity-60 transition-all duration-300 group hover:transform hover:scale-[1.02]`}
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className={`w-14 h-14 ${colors.bg} rounded-lg flex items-center justify-center`}>
                     <project.icon className={`w-7 h-7 ${colors.icon}`} />
                   </div>
-                  <ExternalLink className="w-5 h-5 text-gray-400 hover:text-white transition-colors cursor-pointer" />
+                  <ExternalLink className="w-5 h-5 text-gray-300 hover:text-white transition-colors cursor-pointer" />
                 </div>
 
                 <div className="space-y-4">
@@ -107,22 +107,22 @@ const Portfolio: FC = () => {
                     <span className={`text-sm ${colors.accent} font-medium`}>
                       {project.category}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1">
+                    <h3 className="text-xl font-bold text-white mt-1 font-heading">
                       {project.title}
                     </h3>
                   </div>
 
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-200 leading-relaxed">
                     {project.description}
                   </p>
 
                   <div className="space-y-3">
-                    <h4 className="text-sm font-medium text-white">Technologies Used:</h4>
+                    <h4 className="text-sm font-medium text-white font-heading">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-3 py-1 bg-slate-600/50 text-gray-300 text-xs rounded-full border border-gray-600"
+                          className="px-3 py-1 bg-gray-700/50 text-gray-200 text-xs rounded-full border border-gray-600 font-medium"
                         >
                           {tech}
                         </span>
@@ -145,7 +145,7 @@ const Portfolio: FC = () => {
 
         {/* Testimonials Section */}
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-white text-center mb-12">
+          <h3 className="text-2xl font-bold text-white text-center mb-12 font-heading">
             Professional Experience
           </h3>
           
@@ -169,16 +169,16 @@ const Portfolio: FC = () => {
             ].map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-slate-700/30 p-6 rounded-xl border border-gray-600/30"
+                className="bg-black/40 p-6 rounded-xl border border-gray-600/30"
               >
-                <p className="text-gray-300 italic mb-4">
+                <p className="text-gray-200 italic mb-4">
                   {testimonial.quote}
                 </p>
                 <div className="text-sm">
-                  <div className="text-white font-medium">
+                  <div className="text-white font-medium font-heading">
                     {testimonial.author}
                   </div>
-                  <div className="text-gray-400">
+                  <div className="text-gray-300">
                     {testimonial.company}
                   </div>
                 </div>
