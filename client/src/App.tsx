@@ -1,4 +1,5 @@
-import { Route, Switch } from 'wouter';
+import { Router } from 'wouter';
+import { useHashLocation } from 'wouter/use-hash-location';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -25,9 +26,11 @@ function App() {
   return (
     <div className="bg-slate-900 min-h-screen">
       <CyberCursor />
-      <Header />
-      <HomePage />
-      <Footer />
+      <Router hook={useHashLocation}>
+        <Header />
+        <HomePage />
+        <Footer />
+      </Router>
     </div>
   );
 }
