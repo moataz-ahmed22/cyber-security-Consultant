@@ -1,4 +1,5 @@
-import { Route, Switch, HashRouter } from 'wouter';
+import { Route, Switch } from 'wouter';
+import { HashRouter } from 'wouter/hash';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
