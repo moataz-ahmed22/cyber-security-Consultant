@@ -31,7 +31,7 @@ git checkout main
 echo.
 echo Deployment complete!
 echo Your site should be available at:
-echo https://moataz-younes.github.io/Cybersecurity-Mentor-Consultant/
+echo https://moataz-ahmed22.github.io/cyber-security-Consultant/
 echo.
 echo Make sure to enable GitHub Pages in your repository settings:
 echo 1. Go to Settings ^> Pages
