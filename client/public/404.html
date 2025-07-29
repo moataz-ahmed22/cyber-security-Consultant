@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moataz Younes - Cybersecurity Consultant</title>
+    <script>
+        // GitHub Pages SPA redirect
+        // This script takes the current URL and redirects to the index page
+        // with the path as a query parameter for client-side routing
+        const path = window.location.pathname.replace('/Cybersecurity-Mentor-Consultant', '');
+        const query = window.location.search;
+        const redirect = '/Cybersecurity-Mentor-Consultant/' + (path === '/' ? '' : '?redirect=' + encodeURIComponent(path + query));
+        window.location.replace(redirect);
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
